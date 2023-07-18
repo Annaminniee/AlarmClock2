@@ -29,13 +29,13 @@ class AlarmClock {
     }
 }
 let alarmClock = AlarmClock()
-let setLimit = 120
+let setLimit = 0
 alarmClock.limit = setLimit
 print("アラームをセットします。")
 let setTime = true
-if setTime {
+if setLimit == nil {
     print("起床時間は\(setLimit / 60)時に設定します。")
-} else {
+} else if setLimit == 0 {
     print ("起床時間が設定されていません！")
 }
 alarmClock.start()
