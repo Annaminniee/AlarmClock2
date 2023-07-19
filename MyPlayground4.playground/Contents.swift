@@ -35,7 +35,7 @@ class AlarmClock {
 }
 let alarmClock = AlarmClock()
 
-let setLimit = 120
+let setLimit = 0
 alarmClock.limit = setLimit
 print("起床時間は\(setLimit / 60)時に設定します。")
 
